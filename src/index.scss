@@ -1,0 +1,45 @@
+.seat-select{
+  &__content{
+    display: flex;
+  }
+  &__seats{
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  &__info{
+    width: 200px;
+    flex-shrink: 0;
+  }
+  &__row{
+    height: 50px;
+    display: flex;
+    &-number{
+      flex-basis: 20px;
+      flex-shrink: 1;
+      flex-grow: 0;
+    }
+  } 
+}
+.seat{
+  &__seat{
+    &-container{
+      flex-basis: 50px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid white;
+      cursor: pointer;
+      &__state{
+        &-free{
+          background-color: rgba(15, 215, 13, 0.53);
+        }
+        &-occupied{
+          background-color: rgba(215, 21, 29, 0.75);
+          cursor: default;
+        }
+        &-reserved{
+          background-color: rgba(215, 180, 63, 0.75);
+        }
+      } 
+    } 
+  } 
+}
